@@ -14,7 +14,7 @@ MongoClient.connect('mongodb://localhost:27017/examenPrep', function(err, _db) {
 	db = _db;
 	postTable = db.collection('posts');
   userTable = db.collection('users');
-  console.log("conected to mongodb database");
+  console.log("###Connected to the mongoDB database###");
 });
 
 process.on('SIGINT', function() {
